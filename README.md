@@ -1,115 +1,45 @@
-🚀 Real-Time Chat App (React + WebSocket)
+🖤 Real-Time Chat App — React + WebSocket
 
-A beautiful, modern real-time chat application built using React and WebSockets.
-Supports chat rooms, smooth animations, auto-scrolling, glass UI, and a premium dark theme.
+A modern real-time chat application built using React, TailwindCSS, and WebSockets.
 
 ✨ Features
 
-✅ Real-time messaging using WebSockets
+Real-time messaging
 
-✅ Join chat rooms with a room ID
+Join rooms using a Room ID
 
-✅ Beautiful glass-morphism UI
+Auto-scroll to latest messages
 
-✅ Smooth auto-scroll to latest messages
+Clean dark UI
 
-✅ Modern gradients & dark theme
+Lightweight & fast
 
-✅ Clean React architecture
+🔧 Tech Stack
 
-✅ Lightweight — no external UI libraries
+Frontend: React, TailwindCSS
 
-📁 Project Structure
-/src
- ├── App.jsx        # Main React component (chat UI)
- ├── index.jsx      # Renders React App
- └── styles.css     # Tailwind / global styles
+Backend: Node.js, WebSocket (ws)
 
-/server
- └── server.js      # WebSocket backend (Node.js + ws)
-
-🛠️ Tech Stack
-Frontend
-
-React (Vite / CRA)
-
-TailwindCSS
-
-WebSocket API
-
-Modern UI (Glassmorphism + Gradients)
-
-Backend
-
-Node.js
-
-WebSocket server (ws library)
-
-⚙️ Installation & Setup
-Clone the repository
+🚀 Getting Started
+1️⃣ Clone
 git clone https://github.com/your-username/chat-app.git
 cd chat-app
 
-▶️ Start Frontend
-
-If using Vite:
-
+2️⃣ Start Frontend
 npm install
 npm run dev
 
-▶️ Start Backend (WebSocket Server)
+3️⃣ Start Backend
 cd server
 npm install
 node server.js
 
+💡 How It Works
 
-By default, server runs on:
+Client connects to the WebSocket server
 
-ws://localhost:8080
+User joins a room via Room ID
 
-🧠 How It Works
-1. Client connects to WebSocket server
-const ws = new WebSocket("ws://localhost:8080");
+Messages are exchanged live
 
-2. User joins a room
-{
-  "type": "join",
-  "payload": { "roomID": "xyz" }
-}
-
-3. Sending a message
-{
-  "type": "chat",
-  "payload": { "message": "Hello!" }
-}
-
-4. Auto-scroll to newest messages
-
-React useEffect keeps the chat window updated smoothly.
-
-🎨 UI Preview
-
-(Add screenshots here)
-
-/screenshots
- ├── join-screen.png
- └── chat-screen.png
-
-🔮 Upcoming Features
-
-Typing indicator
-
-Read receipts
-
-Online user list
-
-File sharing
-
-Emojis & GIFs
-
-Message timestamps
-
-🤝 Contributing
-
-Pull requests are welcome!
-For major changes, please open an issue first to discuss what you would like to change.
+UI auto-scrolls to the newest message
