@@ -1,8 +1,8 @@
-🖤 Real-Time Chat App — React + WebSocket
+# 🖤 Real-Time Chat App — React + WebSocket
 
 A modern real-time chat application built using React, TailwindCSS, and WebSockets.
 
-✨ Features
+# ✨ Features
 
 Real-time messaging
 
@@ -20,7 +20,7 @@ Frontend: React, TailwindCSS
 
 Backend: Node.js, WebSocket (ws)
 
-🚀 Getting Started
+# 🚀 Getting Started
 1️⃣ Clone
 git clone https://github.com/your-username/chat-app.git
 cd chat-app
@@ -34,7 +34,7 @@ cd server
 npm install
 node server.js
 
-💡 How It Works
+# 💡 How It Works
 
 Client connects to the WebSocket server
 
