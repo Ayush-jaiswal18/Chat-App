@@ -129,7 +129,3 @@ export default function App() {
     </div>
   );
 }
-
-kjnbjkybnbn
-trnnhknh
-jrnh
